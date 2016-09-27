@@ -1,0 +1,22 @@
+language: cpp
+before_install:
+  - sudo apt-get install cmake
+script: 
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
+  - ./test/test.run
+  - ./load_test
+os:
+  - linux
+  - osx
+compiler:
+  - clang
+  - gcc
+notifications:
+  recipients:
+    - i@yanyiwu.com
+  email:
+    on_success: change
+    on_failure: always
