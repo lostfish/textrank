@@ -1,0 +1,16 @@
+PROJECT(ECLAT)
+
+CMAKE_MINIMUM_REQUIRED (VERSION 2.6)
+
+if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+    set (CMAKE_INSTALL_PREFIX "/usr" CACHE PATH "default install path" FORCE )
+endif()
+
+ADD_DEFINITIONS(-O3 -Wall -g)
+IF(APPLE) # mac os
+    ADD_DEFINITIONS(-std=c++0x)
+endif()
+
+AUX_SOURCE_DIRECTORY(./src DIR_SRCS)
+ADD_EXECUTABLE(main ${DIR_SRCS})
+ADD_EXECUTABLE(segment segment.cpp ./src/text_utils.cpp)
