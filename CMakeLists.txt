@@ -12,5 +12,5 @@ IF(APPLE) # mac os
 endif()
 
 AUX_SOURCE_DIRECTORY(./src DIR_SRCS)
-ADD_EXECUTABLE(main ${DIR_SRCS})
+ADD_EXECUTABLE(textrank ${DIR_SRCS})
 ADD_EXECUTABLE(segment segment.cpp ./src/text_utils.cpp)

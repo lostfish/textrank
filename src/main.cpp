@@ -1,6 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<sstream>
+#include<cstdlib>
 #include "text_rank.h"
 #include "sentence_rank.h"
 #include "text_utils.h"
