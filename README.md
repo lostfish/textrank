@@ -24,7 +24,9 @@ textrank抽取关键词或者关键句，输出为在输入文件最前面追加
 sh run.sh
 ```
 输入文件为./data/news.u8, 格式为两列：标题，正文
+
 关键词文件为： ./data/news.word
+
 关键句文件为： ./data/news.sent
 
 ##参考
