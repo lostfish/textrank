@@ -1,6 +1,6 @@
 # TextRank算法实现
 
-##编译
+## 编译
 ```
 cmake ./
 make
@@ -19,7 +19,7 @@ textrank抽取关键词或者关键句，输出为在输入文件最前面追加
  <choose_field>: if keywords, set as token field; if key sentences, set as content field
 ```
 
-##运行
+## 运行
 ```
 sh run.sh
 ```
@@ -29,6 +29,6 @@ sh run.sh
 
 关键句文件为： ./data/news.sent
 
-##参考
+## 参考
 
-http://tangke.me/posts/2016/09/17/textranksuan-fa-shi-xian.html
+http://lostfish.github.io/posts/2016/09/17/textranksuan-fa-shi-xian.html
